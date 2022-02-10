@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  node_front:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile_Node
+    ports:
+      - 3000:3000
+
+  express_back:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile_Express
+    ports:
+      - 3001:3001
+      
+
+
