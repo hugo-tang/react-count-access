@@ -14,8 +14,8 @@ pipeline {
             }
         }
 
-        /*stage('React Test'){
-            steps{
+        stage('React Test'){
+            /*steps{
                 dir('frontend') {
                     dir('src') {
                         bat 'echo %cd%'
@@ -23,7 +23,7 @@ pipeline {
                         bat 'npm test --passWithNoTests'
                     }
                 }
-            }
-        }*/
+            }*/
+        }
     }
 }
