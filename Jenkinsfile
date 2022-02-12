@@ -5,7 +5,7 @@ pipeline {
         stage('build'){
             steps{
                 bat 'docker-compose up -d'
-                bat 'cd frontend'
+                bat 'cd frontend/src'
                 bat 'npm test'
             }
         }
