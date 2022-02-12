@@ -8,7 +8,7 @@ pipeline {
             steps{
                 bat 'echo %cd%'
                 bat 'dir'
-                bat 'cd ./frontend/src'
+                bat 'cd frontend/'
                 bat 'echo %cd%'
                 bat 'dir'
                 bat 'npm test'
