@@ -9,6 +9,7 @@ pipeline {
                 dir('frontend') {
                     dir('frontend') {
                         bat 'echo %cd%'
+                        bat 'npm install'
                         bat 'npm test'
                     }
                 }
