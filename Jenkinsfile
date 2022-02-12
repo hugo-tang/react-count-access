@@ -10,7 +10,7 @@ pipeline {
                     dir('src') {
                         bat 'echo %cd%'
                         bat 'npm install'
-                        bat 'npm test'
+                        bat 'npm test --passWithNoTests'
                     }
                 }
             }
