@@ -6,11 +6,11 @@ pipeline {
 
         stage('React Test'){
             steps{
-                bat 'pwd'
-                bat 'ls'
-                bat 'pwd'
+                bat 'echo %cd%'
+                bat 'dir'
                 bat 'cd ./frontend/src'
-                bat 'pwd'
+                bat 'echo %cd%'
+                bat 'dir'
                 bat 'npm test'
             }
         }
