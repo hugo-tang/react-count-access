@@ -7,7 +7,7 @@ pipeline {
         stage('React Test'){
             steps{
                 dir('frontend') {
-                    dir('frontend') {
+                    dir('src') {
                         bat 'echo %cd%'
                         bat 'npm install'
                         bat 'npm test'
