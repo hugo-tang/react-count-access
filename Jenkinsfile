@@ -16,6 +16,7 @@ pipeline {
 
         stage('React Test'){
             steps{
+                sleep time: 1, unit: 'SECONDS'
                 /*dir('frontend') {
                     dir('src') {
                         bat 'echo %cd%'
